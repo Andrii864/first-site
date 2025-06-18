@@ -6,7 +6,6 @@ body {
 
 .section {
     margin-bottom: 100px;
-    max-width: 1280px;
     width: 100%;
     text-align: center;
 }
@@ -30,19 +29,39 @@ body {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-
+    font-weight: bold;
 
 }
 
 .item {
     background-color: #eec807;
-    padding: 20px 30px 20px 30px;
+    padding: 30px 40px 30px 40px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .github {
     margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.github:hover {
+    background-color: #eec807;
+}
+
+.button {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
 }
 
 /* Me Section */
@@ -55,9 +74,10 @@ body {
 
 .card {
     background-color: #ffffff;
+
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
     margin: 10px;
     flex: 1;
     min-width: 300px;
