@@ -1,0 +1,40 @@
+.section {
+    margin-bottom: 100px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.color-geometry {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    gap: 10px;
+}
+
+.red {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.blue {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.green {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
+
+/* Footer Section */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
