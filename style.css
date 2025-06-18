@@ -21,18 +21,46 @@ body {
 
 
 .hero-title {
-    padding-left: 50px;
-    padding-right: 1060px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
 }
 
 .interests {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+
+
+}
+
+.item {
+    background-color: #eec807;
+    padding: 20px 30px 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .github {
     margin-top: 50px;
+}
+
+/* Me Section */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1;
+    min-width: 300px;
 }
 
 /* Footer Section */
