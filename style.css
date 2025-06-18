@@ -1,34 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+
+}
+
 .section {
     margin-bottom: 100px;
+    max-width: 1110px;
     width: 100%;
-    max-width: 1200px;
     text-align: center;
 }
 
-.color-geometry {
+/* Header */
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+
+
+.hero-title {
+    padding-left: 50px;
+    padding-right: 1060px;
+}
+
+.interests {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    padding: 0;
-    gap: 10px;
 }
 
-.red {
-    background-color: red;
-    width: 100px;
-    height: 100px;
-}
-
-.blue {
-    background-color: blue;
-    width: 100px;
-    height: 100px;
-}
-
-.green {
-    background-color: green;
-    width: 100px;
-    height: 100px;
+.github {
+    margin-top: 50px;
 }
 
 /* Footer Section */
