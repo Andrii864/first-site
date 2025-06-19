@@ -1,20 +1,6 @@
-body {
-    background-color: #e7f0fb;
-    color: #2a2a2a;
-    font-family: Arial, sans-serif;
-    padding: 0;
-
-}
-
-.section {
-    padding: 0px;
-    margin-bottom: 100px;
-    width: 100%;
-    text-align: center;
-}
-
 :root {
     --color-bg: #e7f0fb;
+    --color-bg-yellow: #eec807;
     --color-text: #2a2a2a;
     --color-text-light: #888888;
     --color-accent: #ff4c4c;
@@ -28,20 +14,53 @@ body {
 }
 
 
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: Arial, sans-serif;
+}
+
+.conteiner {
+    text-align: center;
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+
+.button {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul {
+    padding: 0;
+}
+
 /* Header */
 
 .header {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(135deg, #2b2d42, #e7209e70);
-    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #636bbd, #e7209e70);
+    color: var(--color-text);
     padding: 10px 0;
     width: 100%;
-    margin: 0;
 }
 
-/* Main */
+/* hero section*/
 
 .hero-section {
     padding-top: 150px;
@@ -55,15 +74,16 @@ body {
 
 }
 
-.hero-title {
+.hero-section__title {
     margin-bottom: 20px;
 }
 
 
-.interests {
+.hero-section__interests {
     display: flex;
     justify-content: space-around;
     padding: 0;
+    margin-top: 90px;
     list-style-type: none;
     font-weight: bold;
     gap: 10px;
@@ -72,8 +92,8 @@ body {
 
 
 
-.item {
-    background-color: #eec807;
+.hero-section__item {
+    background-color: #f34cff7e;
     padding: 30px 40px 30px 40px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -82,12 +102,12 @@ body {
 }
 
 @media (max-width: 480px) {
-    .item {
+    .hero-section__item {
         padding: 10px 20px;
     }
 }
 
-/* Me Section */
+/* Skills Section */
 
 .skills {
     display: flex;
@@ -99,7 +119,7 @@ body {
 
 
 .skill {
-    background-color: #eec807;
+    background-color: var(--color-bg-yellow);
     padding: 30px 40px 30px 40px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -111,21 +131,22 @@ body {
 
 @media (max-width: 480px) {
     .skill {
-
         padding: 10px 20px;
     }
 }
 
-.cards {
+/* about section */
+
+.about-section__cards {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 
 }
 
-.card {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+.about-section__card {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-text-light);
     padding: 20px;
     border-radius: 15px;
     box-shadow:
@@ -140,7 +161,13 @@ body {
     width: 100%;
 }
 
-.about {
+/* desires section */
+
+.desires-section {
+    width: 100%;
+}
+
+.desires-section__item {
     display: flex;
     justify-content: center;
     gap: 90px;
@@ -150,34 +177,56 @@ body {
 }
 
 @media (max-width: 480px) {
-    .about {
+    .desires-section__item {
         gap: 20px;
     }
 
 }
 
-.about-image {
+.desires-section__image {
     max-width: 400px;
     width: 100%;
     border-radius: 50px 0;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
 
-.about-text {
+.desires-section__text {
     max-width: 500px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.6;
 }
 
-/* Contact */
+/* Contact Section */
 
-.github {
+.contact-section__title {
     margin-top: 50px;
-    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.contact-section__text {
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-section__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-section__button {
+    margin-top: 20px;
+    margin-bottom: 40px;
     background-color: var(--color-accent);
     color: var(--color-btn-text);
-    padding: 30px 60px;
+    padding: 20px 40px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -186,20 +235,27 @@ body {
     transition: 0.3s;
 }
 
-.github:hover {
+@media screen and (max-width: 480px) {
+    .contact-section__button {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-bottom: 5px;
+
+    }
+
+}
+
+.contact-section__button:hover {
     background-color: var(--color-accent-hover);
 }
 
-.button {
-    margin: 30px 0;
-    display: flex;
-    justify-content: center;
-}
+
 
 /* Footer Section */
 
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #f1f1f1;
+    background-color: var(--color-text);
+    color: var(--color-text-light);
 }

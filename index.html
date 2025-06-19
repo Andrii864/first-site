@@ -9,56 +9,85 @@
 </head>
 
 <body>
-    <header class="header section">
+    <header class="header">
+
         <h1>Мій перший сайт</h1>
         <p>Мені 14 років. Хочу стати крутим веброзробником.</p>
+
     </header>
     <main>
-        <section class="hero-section section">
-            <h2 class="hero-title">Мої інтереси:</h2>
-            <ul class="interests">
-                <li class="item">Ігри</li>
-                <li class="item">Програмування</li>
-                <li class="item">Аніме</li>
-            </ul>
+        <section class="hero-section">
+            <div class="conteiner">
+                <h2 class="hero-section__title">Мої інтереси:</h2>
+                <ul class="hero-section__interests">
+                    <li class="hero-section__item">Ігри</li>
+                    <li class="hero-section__item">Програмування</li>
+                    <li class="hero-section__item">Аніме</li>
+                </ul>
+            </div>
         </section>
-        <section class="skills-section section">
-            <h2>Мої навички</h2>
-            <ul class="skills section">
-                <li class="skill">HTML</li>
-                <li class="skill">CSS
-            </ul>
-            <h2>Трохи про мене</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Моє ім'я</h3>
-                    <p>Мене звати Андрій.</p>
-                </div>
-                <div class="card">
-                    <h3>Мої захоплення</h3>
-                    <p>Я люблю програмувати, грати в ігри та дивитися аніме.</p>
-                </div>
-                <div class="card">
-                    <h3>Моя мета</h3>
-                    <p>Хочу стати професійним веброзробником.</p>
+        <section class="skills-section">
+            <div class="conteiner">
+                <h2>Мої навички</h2>
+                <ul class="skills">
+                    <li class="skill">HTML</li>
+                    <li class="skill">CSS
+                </ul>
+            </div>
+        </section>
+        <section class="about-section">
+            <div class="conteiner">
+                <h2>Трохи про мене</h2>
+                <div class="about-section__cards">
+                    <div class="about-section__card">
+                        <h3>Моє ім'я</h3>
+                        <p>Мене звати Андрій.</p>
+                    </div>
+                    <div class="about-section__card">
+                        <h3>Мої захоплення</h3>
+                        <p>Я люблю програмувати, грати в ігри та дивитися аніме.</p>
+                    </div>
+                    <div class="about-section__card">
+                        <h3>Моя мета</h3>
+                        <p>Хочу стати професійним веброзробником.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="about">
-            <img src="./about-image.jpg" alt="Моє фото" class="about-image">
-            <div class="about-text">
-                <h2>Чого я прагну</h2>
-                <p>Я навчаюся веброзробці і прагну стати професійним розробником. Мені подобається створювати сайти та
-                    вивчати нові технології.</p>
-                <p>Моїм улюбленим заняттям є програмування, а також грати в ігри та дивитися аніме.</p>
+        <section class="desires-section">
+            <div class="conteiner">
+                <div class="desires-section__item">
+                    <img src="./about-image.jpg" alt="Моє фото" class="desires-section__image">
+                    <div class="desires-section__text">
+                        <h2>Чого я прагну</h2>
+                        <p>Я навчаюся веброзробці і прагну стати професійним розробником. Мені подобається створювати
+                            сайти
+                            та
+                            вивчати нові технології.</p>
+                        <p>Моїм улюбленим заняттям є програмування, а також грати в ігри та дивитися аніме.</p>
+                    </div>
+                </div>
             </div>
-
-
         </section>
 
-        <section class="contact-section section">
-            <div class="button"><a href="https://github.com/Andrii864" class="github">Мій GitHub</a></div>
+        <section class="contact-section">
+            <div class="conteiner">
+                <h2 class="contact-section__title">Зв'яжіться зі мною</h2>
+                <p class="contact-section__text">Якщо ви хочете зв'язатися зі мною, ви можете написати мені на
+                    електронну пошту або знайти мене в
+                    соціальних мережах.</p>
+                <div class="contact-section__list">
+                    <div class="button"><a href="https://github.com/Andrii864" class="contact-section__button">Мій
+                            GitHub</a></div>
+                    <div class="button">
+                        <a href="mailto:vahnukandrij@gmail.com" class="contact-section__button">Мій Email</a>
+                    </div>
+                    <div class="button">
+                        <a href="https://t.me/myewzy15" class="contact-section__button">Мій Telegram</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
