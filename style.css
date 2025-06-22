@@ -15,12 +15,13 @@
 
 
 body {
+    scroll-behavior: smooth;
     background-color: var(--color-bg);
     color: var(--color-text);
     font-family: Arial, sans-serif;
 }
 
-.conteiner {
+.container {
     text-align: center;
     width: 100%;
     max-width: 1288px;
@@ -31,7 +32,13 @@ body {
     animation: fadeInUp 1s ease-out forwards;
 }
 
+/* Анімація знизу вгору */
 @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -171,6 +178,11 @@ ul {
     }
 }
 
+.skill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 /* about section */
 
 .about-section__cards {
@@ -235,7 +247,6 @@ ul {
 
 /* Goals Section */
 .goals-section {
-    animation-delay: 0.3s;
     background-color: #ffffff;
     padding: 60px 20px;
     border-radius: 20px;
@@ -247,7 +258,6 @@ ul {
 .goals-section__title {
     text-align: center;
     font-weight: bold;
-    font-weight: 700;
     font-size: 28px;
     margin-bottom: 40px;
     color: var(--color-accent);
@@ -335,7 +345,6 @@ ul {
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    ;
     min-width: 124px;
 }
 
